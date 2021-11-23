@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page Title -->
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/style.css" />
     <!-- Icons -->
@@ -16,21 +16,85 @@
       crossorigin="anonymous"
     />
     <!-- Fonts -->
-    <link href="https://fonts.google.com/" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="https://www.theodinproject.com/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <!-- JS Script -->
-    <script defer src="/app/js/script.js"></script>
+    <script src="./app/js/script.js" defer></script>
   </head>
   <body>
-    <h1>Hello</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero voluptate
-      sapiente repudiandae ullam mollitia veniam praesentium accusamus minus
-      fugiat, at neque explicabo magnam possimus minima ea, vitae ipsum error!
-      Necessitatibus laudantium optio magnam quae aperiam doloremque et fuga,
-      quos earum. Debitis deserunt iure voluptatum tempora perspiciatis eligendi
-      quam, numquam optio.
-    </p>
+    <div class="background">
+      <div class="wrapper">
+        <h1>Rock - Paper - Scissors</h1>
+        <div class="result">Make a choice!</div>
+
+        <div class="container">
+          <div class="player">
+            <h2>Player</h2>
+            <h3 id="player_score">0</h3>
+            <div class="options">
+              <div class="rock" id="playerRock">
+                <img
+                  class="selection"
+                  src="https://www3.bostonglobe.com/rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/rock--left.png"
+                  alt=""
+                />
+              </div>
+              <div class="paper" id="playerPaper">
+                <img
+                  class="selection"
+                  src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/paper--left.png"
+                  alt=""
+                />
+              </div>
+              <div class="scissors" id="playerScissors">
+                <img
+                  class="selection"
+                  src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/scissors--left.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="computer">
+            <h2>Computer</h2>
+            <h3 id="computer_score">0</h3>
+            <div class="options">
+              <div class="rock" id="computerRock">
+                <img
+                  class="selection"
+                  src="https://www3.bostonglobe.com/rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/rock--left.png"
+                  alt=""
+                />
+              </div>
+              <div class="paper" id="computerPaper">
+                <img
+                  class="selection"
+                  src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/paper--left.png"
+                  alt=""
+                />
+              </div>
+              <div class="scissors" id="computerScissors">
+                <img
+                  class="selection"
+                  src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/scissors--left.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

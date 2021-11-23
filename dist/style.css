@@ -10,6 +10,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -21,6 +22,15 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: url(https://cdn.pixabay.com/photo/2021/06/24/11/18/background-6360861_960_720.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1,
@@ -28,10 +38,82 @@ h2,
 h3 {
   margin-top: 0;
   line-height: 1.1;
+  text-align: center;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.background h1 {
+  margin: 0 auto 3.125rem;
+  padding: 3.125rem 0 0;
+}
+.background h2 {
+  margin: 0 auto 1.5625rem;
+}
+.background .result {
+  margin: 0 auto 3.125rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.background #player_score,
+.background #computer_score {
+  margin: 0 auto 3.125rem;
+  font-size: 1.5rem;
+}
+.background img {
+  display: inline-block;
+  cursor: pointer;
+}
+.background .options .rock,
+.background .options .paper {
+  margin-right: 0.625rem;
+}
+
+.selected {
+  transform: translateY(-0.9375rem);
+  background-color: cornflowerblue;
+  box-shadow: -1px -3px 0.625rem 0.625rem cornflowerblue;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 9.375rem;
+  padding: 0 3.125rem 3.125rem;
+}
+.container .options {
+  display: flex;
+}
+
+.result {
+  text-align: center;
+}
+
+img {
+  width: 6.25rem;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
